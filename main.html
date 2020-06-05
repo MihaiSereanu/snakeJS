@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer type="module"></script>
+  </head>
+  <body>
+    <div id="control">
+      <h1>Settings</h1>
+      <h3>Controls</h3>
+      <p>Move with ARROW KEYS.</p>
+      <p>PAUSE by pressing SPACE.</p>
+      <h3>Snake Speed</h3>
+      <div class="buttonwrap">
+        <button class="mainbtn normal" value="5">Normal</button>
+        <button class="mainbtn hard" value="15">Hard</button>
+        <button class="mainbtn extreme" value="25">Extreme</button>
+      </div>
+      <h3>Elongation</h3>
+      <div class="sliderContainer">
+        <input type="range" min="1" max="5" value="1" class="slider" />
+        <label for="sliderValue" id="display">Increase by: 1</label>
+      </div>
+    </div>
+    <div id="game-board"></div>
+  </body>
+</html>
